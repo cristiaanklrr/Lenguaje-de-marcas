@@ -1,0 +1,28 @@
+Informática básica
+
+Cuestión 1:
+equipos/maquina
+
+Cuestión 2:
+equipos/máquina/hardware
+
+Cuestión 3:
+equipos/máquina/config
+
+Cuestión 4:
+equipos/máquina/hardware/fabricante
+
+Cuestión 5:
+equipos/máquina/hardware/disco
+
+Cuestión 6:
+equipos/máquina/config/IP
+
+Cuestión 7:
+equipos/máquina/@nome
+
+Cuestión 8:
+/equipos/máquina[hardware/gravadora/@tipo='DVD']/@nome
+
+Cuestión 9:
+/equipos/máquina/config/OS[../role]
