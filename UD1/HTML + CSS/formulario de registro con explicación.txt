@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <form action="registro.php" method="GET">
+      <h1>Formulario de registro</h1>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" maxlength="50" required /><br />
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" maxlength="50" required /><br />
+
+      <label for="genero">Género:</label>
+      <select id="genero" name="genero" required>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="no binario">No binario</option>
+      </select><br />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="text" id="correo" name="correo" required /><br />
+
+      <label for="novedades">Deseo recibir información sobre novedades y ofertas:</label>
+      <input type="checkbox" id="novedades" name="novedades" checked /><br />
+
+      <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos:</label>
+      <input type="checkbox" id="condiciones" name="condiciones" required /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
+
+1 El título de la página se establece mediante la etiqueta <title> en la sección <head> del documento.
+2 El método de envío del formulario se establece mediante el atributo method en la etiqueta <form>. En este caso, se utiliza el método GET.
+3 El destino del envío del formulario se establece mediante el atributo action en la etiqueta <form>. En este caso, se envía a registro.php.
+4 La longitud máxima de entrada de datos de los controles para el nombre y los apellidos se establece mediante el atributo maxlength en las etiquetas <input> correspondientes.
+5 La casilla de verificación con el texto Deseo recibir información sobre novedades y ofertas se establece mediante la etiqueta <input> con el atributo type establecido en “checkbox”. El atributo checked se utiliza para que la casilla esté activada por defecto.
+6 La casilla de verificación con el texto Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos se establece mediante la etiqueta <input> con el atributo type establecido en “checkbox”. El atributo required se utiliza para que el usuario tenga que marcar la casilla antes de enviar el formulario.
+7 Cada campo tiene una etiqueta asociada mediante la etiqueta <label>. El atributo for de la etiqueta <label> se establece con el valor del atributo id de la etiqueta <input> correspondiente.
