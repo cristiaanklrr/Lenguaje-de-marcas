@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de envío de boletín</title>
+</head>
+<body>
+    <h1>Formulario de envío de boletín</h1>
+    <form action="/suscribir" method="post">
+        <label for="direccion">Dirección postal:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <br>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+        <br>
+        <label for="codigo_postal">Código postal:</label>
+        <input type="text" id="codigo_postal" name="codigo_postal" required>
+        <br>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="es">España</option>
+            <option value="fr">Francia</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <br>
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">Acepto las condiciones del servicio.</label>
+        <br>
+        <label for="ofertas">Deseo recibir ofertas:</label>
+        <input type="radio" id="diariamente" name="ofertas" value="diariamente">
+        <label for="diariamente">Diariamente</label>
+        <input type="radio" id="semanalmente" name="ofertas" value="semanalmente">
+        <label for="semanalmente">Semanalmente</label>
+        <br>
+        <button type="submit">Crear cuenta</button>
+    </form>
+</body>
+</html>
