@@ -1,0 +1,45 @@
+#7.1
+<xsl:template match="/">
+  <xsl:value-of select="ies/ciclos/ciclo/nombre" />
+</xsl:template>
+
+#7.2 
+
+<xsl:template match="/">
+  <html>
+    <body>
+      <xsl:for-each select="ies/ciclos/ciclo">
+        <p><xsl:value-of select="nombre" /></p>
+      </xsl:for-each>
+    </body>
+  </html>
+</xsl:template>
+
+#7.3
+
+<xsl:template match="/">
+  <html>
+    <body>
+      <ul>
+        <xsl:for-each select="ies/ciclos/ciclo">
+          <li><xsl:value-of select="nombre" /></li>
+        </xsl:for-each>
+      </ul>
+    </body>
+  </html>
+</xsl:template>
+
+
+#7.4
+
+<xsl:template match="/">
+  <html>
+    <body>
+      <table border="1">
+        <xsl:for-each select="ies/ciclos/ciclo">
+          <tr><td><xsl:value-of select="nombre" /></td></tr>
+        </xsl:for-each>
+      </table>
+    </body>
+  </html>
+</xsl:template>
